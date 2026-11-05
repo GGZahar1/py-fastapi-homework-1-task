@@ -23,7 +23,7 @@ async def get_movie_detail(
     if movie is None:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Movie with the given ID was not found."
+            detail="Movie with the given ID was not found."
         )
 
     return movie
