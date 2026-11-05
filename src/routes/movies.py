@@ -40,8 +40,8 @@ async def get_movies(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=[
                 {
-                    "loc": ["query", "page"],
-                    "msg": "ensure this value is greater than or equal to 1",
+                    "loc": ["query", "per_page"],
+                    "msg": "Input should be between 1 and 20",
                     "type": "value_error.number.not_ge"
                 }
             ]
@@ -52,8 +52,8 @@ async def get_movies(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=[
                 {
-                    "loc": ["query", "page"],
-                    "msg": "ensure this value is greater than or equal to 1",
+                    "loc": ["query", "per_page"],
+                    "msg": "Input should be between 1 and 20",
                     "type": "value_error.number.not_ge"
                 }
             ]
